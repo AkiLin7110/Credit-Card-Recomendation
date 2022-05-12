@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Page</title>
+</head>
+<body bgcolor=#FFCEAF>
+<font color = #678AB4 face="華康竹風體W4" size = '4'><b>
+    <form method='post' action={{ url_for('card') }}>
+	<h1>☀信用卡推薦小幫手</h1>
+ 	<label><b><font color = 'red'>你的要求太高啦( >д<)
+	<br> 試著改一下條件吧(´･ω･`)  </font></b></label>
+        <p>
+	<label> 請輸入年薪</label>
+        <input type='text' name='income' />
+    </p>
+	<p>
+	<label> 請輸入每月花費 </label>
+        <input type='text' name='spending' />
+    </p>
+	<label> 追求哩程回饋嗎?</label>
+
+		<select name="air_choose">
+　		<option value="是">是</option>
+　		<option value="否">否</option>
+		</select>
+	</br>
+	<label> 追求紅利回饋嗎?</label>
+		<select name="bonus_choose">
+　		<option value="是">是</option>
+　		<option value="否">否</option>
+		</select>
+        <p>
+        <button type='submit' style= "border:2px #678AB4 solid; background-color:#F7E8C0;color:#678AB4;">Submit</button>
+    </p>    
+    </form>
+</td>
+</body>
+</html>
